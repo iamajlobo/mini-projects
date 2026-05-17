@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#gameover {
+    color:red;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    display:none;
+}
+
+h5 {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
