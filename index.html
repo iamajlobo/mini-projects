@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoboGames | Collection of Simple Games Made by iamajlobo</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2>LoboGames</h2>
+        <div class="btn">
+          <a href="https://github.com/iamajlobo" target="_blank"
+            >Visit my Github</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="title">
+        <h3>Mini Projects Collection</h3>
+        <h1>A Playground of Ideas, Experiments, and Tiny Creations</h1>
+        <p>
+          This collection features mini projects I built while learning,
+          experimenting, and improving my skills in web development, game
+          mechanics, animations, and creative coding.
+        </p>
+      </div>
+      <div class="projects">
+        <!-- Project 1-->
+        <div class="card">
+          <img src="./images/snake.png" alt="Snake Game" />
+
+          <div class="details">
+            <h3>Snake Game</h3>
+
+            <p>
+              A classic snake game built using JavaScript and HTML canvas. Eat
+              food, grow longer, and avoid hitting the walls.
+            </p>
+
+            <a href="./snake/snake.html" target="_blank" class="play-btn"
+              >Play Game</a
+            >
+          </div>
+        </div>
+        <!--End Of Project -->
+
+        <!-- Project 1-->
+        <div class="card">
+          <img src="./images/dino.png" alt="Snake Game" />
+
+          <div class="details">
+            <h3>Dino Game</h3>
+
+            <p>
+              A classic Dino game built using JavaScript and HTML canvas. Jump
+              to avoid cactuses.
+            </p>
+
+            <a href="./dino/dino.html" target="_blank" class="play-btn">Play Game</a>
+          </div>
+        </div>
+        <!--End Of Project -->
+      </div>
+    </main>
+    <footer>&copy 2026 All rights reserved | iamajlobo</footer>
+
+    <script>
+      const isMobile =
+        /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
+          navigator.userAgent,
+        );
+
+      if (isMobile) {
+        const buttons = document.querySelectorAll(".play-btn");
+
+        buttons.forEach((button) => {
+          button.href = "#";
+          button.innerText = "PC Only!";
+          button.classList.add("disabled");
+        });
+      }
+    </script>
+  </body>
+</html>
