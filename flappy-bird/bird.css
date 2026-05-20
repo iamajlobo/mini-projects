@@ -1,0 +1,12 @@
+body { 
+    text-align: center;
+}
+
+#board {
+    width: 300px;
+    height: 500px;
+    background-image: url("./images/background-day.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
