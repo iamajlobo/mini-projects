@@ -10,7 +10,7 @@ let birdImg;
 let topPipe;
 let bottomPipe;
 
-const pipes = [];
+let pipes = [];
 
 
 const bird = {
@@ -25,11 +25,11 @@ let pipeY = 0;
 let pipeX = boardWidth;
 let pipeHeight = 350;
 let pipeWidth = 50;
-let pipeVelocity = -5;
+let pipeVelocity = -3;
 
 //Bird Jumping Attributes
 let birdVelocity = 0;
-let gravity = 0.6;
+let gravity = 0.4;
 let jumpPower = -6;
 
 
@@ -94,7 +94,7 @@ const update = () => {
 
 // Place Pipes
 const generatePipe = () => {
-    if(isGameover) return;    
+    if( isGameover) return;    
 
     const randomY = pipeY - pipeHeight/3 - (Math.random() * (pipeHeight/2))
     const gap = pipeHeight/3;
